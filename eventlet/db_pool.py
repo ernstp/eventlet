@@ -420,6 +420,8 @@ class GenericConnectionWrapper(object):
     def use_result(self, *args, **kwargs):
         return self._base.use_result(*args, **kwargs)
 
+    def get_server_info(self, *args, **kwargs):
+        return self._base.get_server_info(*args, **kwargs)
 
 class PooledConnectionWrapper(GenericConnectionWrapper):
     """A connection wrapper where:
